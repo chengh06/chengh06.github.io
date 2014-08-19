@@ -1,0 +1,8 @@
+body {
+	font: 15px 'hiragino sans gb', helvetica, arial, sans-serif;
+	line-height: 1.5;
+	color: #333;	
+	background: #f5f5f5;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
