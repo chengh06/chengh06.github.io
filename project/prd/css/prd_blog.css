@@ -6,3 +6,77 @@ body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
+
+ul.none {
+	list-style-type: none;
+}
+
+li {
+	margin-top: 10px;
+}
+
+.container {
+  width: 1100px;
+  margin: 20px auto;
+}
+
+.nav a, .nav span {
+  margin-right: 20px;
+}
+
+.main {
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 8px rgba(0,0,0,.2);
+
+  width: 800px;
+  margin-left: 0px;
+}
+
+.right {
+	position: relative;
+	float: right;
+	margin-right: 50px;
+}
+
+
+.menu {
+	font: 15px 'hiragino sans gb', helvetica, arial, sans-serif;
+	width: 150px;
+	padding: 10px;
+	margin-top: -20px;
+	text-align: left;
+}
+
+.menu ul {
+	padding-left: 10px;
+	padding-top: -5px;
+}
+
+.light {
+  color: #999;
+}
+
+.small {
+  font-size: 80%;
+}
+
+.meta {
+  text-align: right;
+}
+
+.meta p {
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+.img_bc {
+	background: #f0f0f0;
+}
+
+.ui_img {
+	width: 320px;
+	margin: 10px;
+}
+
