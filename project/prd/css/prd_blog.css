@@ -80,3 +80,12 @@ li {
 	margin: 10px;
 }
 
+.chart_img {
+	max-width: 800px;
+}
+
+.red {
+	color: red;
+}
+
+

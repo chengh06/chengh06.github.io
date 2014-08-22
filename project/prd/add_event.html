@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日程管家</title>
+<link rel="stylesheet" type="text/css" href="./css/prd_blog.css">
+</head>
+<body>
+	<div class="container nav">
+		<a href="chengh06.github.io">主页面</a>
+		<span>需求文档</span>
+		<a href="chengh06.github.io">视觉设计</a>
+	</div>
+
+	<div class="container">
+		<div class="right menu">
+			<ul class="none">
+				<li><a href="">整体布局prd</a></li>
+				<li><a href="./calendar.html">日历视图prd</a></li>
+				<li>添加日程prd</li>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="light small meta">
+				<p>版本：1.0</p>
+				<p>更新：2014-8-21</p>
+			</div>
+
+			<h1>添加日程需求文档</h1>
+
+			<h2>1 概述</h2>
+
+			<p>添加日程分为<strong>智能添加</strong>和<strong>完整添加</strong>两部分，智能添加可以通过文字和语音识别出时间，完整添加和原生日历一致。</p>
+
+			<p>如果用户通过点击添加按钮添加日程，进入智能添加页面，没有默认时间；如果通过点击周视图和日视图添加日程，则进入智能添加页面之后，显示选中的时间。逻辑图如下所示</p>
+
+			<div class="img_bc">
+				<span><img src="./img/add_event_chart1.png" class="chart_img"></span>
+			</div>
+
+			<h2>2 添加日程交互流程</h2>
+
+			<h3>2.1 通过添加按钮添加日程</h3>
+
+			<h4>2.1.1 智能添加交互动画</h4>
+			<div>
+				<p class="small light">如果无法观看视频，请安装最新版的Safari<p>
+				<video src="http://sortime.oss-cn-hangzhou.aliyuncs.com/prd/smart_add.mov" controls="controls"></video>
+			</div>
+
+			<h4>2.1.2 完整添加交互动画</h4>
+			<div>
+				<p class="small light">如果无法观看视频，请安装最新版的Safari<p>
+				<video src="http://sortime.oss-cn-hangzhou.aliyuncs.com/prd/normal_add_event.mov" controls="controls"></video>
+			</div>
+
+			<p class="red"><strong>！！注意：在动画中从选择提醒等页面返回到添加页面时会自动跳到顶部，实际操作过程中，不需要自动跳转到顶部</strong></p>
+
+			<h4>2.1.3 添加日程相关备注</h4>
+			<ol>
+				<li>默认进入智能添加页面</li>
+				<li>默认日程类别为工作</li>
+				<li>智能添加提供“主题”和“添加好友”两个按钮</li>
+				<li>文本框提示输入规范</li>
+				<li>点击文本框，开始输入。同时下方出现模拟的时间区域</li>
+				<ul>
+					<li>输入第一个字时，模拟时间区域出现</li>
+					<li>模拟时间区域日程的颜色和所选类别保持一致</li>
+					<li>随着输入文字的增加，模拟的时间自动变化</li>
+					<li>如果输入时间有误，则需要进入完整添加页面修改</li>
+				</ul>
+				<li>若是通过周视图或者日视图添加日程</li>
+				<ul>
+					<li>直接显示模拟时间区域，开始时间为选中的时间</li>
+					<li>提供时长选择按钮，默认时长为1小时</li>
+				</ul>
+			</ol>
+
+			<h3>2.2 通过点击周视图和日视图添加日程</h3>
+
+
+			<h3>2.3 添加重复性日程</h3>
+
+			<h3>2.4 添加日程关联好友</h3>
+
+			<h2>3 添加功能视觉效果及标注</h2>
+
+			<p>视觉设计的guide line如下图所示：</p>
+
+			<div class="img_bc">
+				<img src="./img/Guideline.png" class="chart_img">
+			</div>
+
+			<p>视觉效果图和标注如下图所示：</p>
+			
+			<p class="small light">视觉设计细节还未最终敲定，以下图片暂供参考<p>
+			<div class="img_bc">
+				<span><img src="./img/add event 04.png" class="ui_img" ></span>
+				<span><img src="./img/add event 05.png" class="ui_img"></span>
+				<span><img src="./img/add event 06.png" class="ui_img" ></span>
+				<span><img src="./img/add event 03.png" class="ui_img"></span>
+			</div>
+
+
+
+			<div>
+				<video></video>
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>
