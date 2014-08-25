@@ -1,0 +1,175 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>日程管家</title>
+<link rel="stylesheet" type="text/css" href="./css/prd_blog.css">
+</head>
+<body>
+	<div class="container nav">
+		<a href="chengh06.github.io">主页面</a>
+		<span>需求文档</span>
+		<a href="chengh06.github.io">视觉设计</a>
+	</div>
+
+	<div class="container">
+		<div class="right menu">
+			<ul class="none">
+				<li><a href="">整体布局prd</a></li>
+				<li><a href="./calendar.html">日历视图prd</a></li>
+				<li><a href="">添加日程prd</a></li>
+				<li><a href="">系统设置</a></li>
+			</ul>
+		</div>
+	<div class="main">
+			<div class="light small meta">
+				<p>版本：1.0</p>
+				<p>更新：2014-8-22</p>
+			</div>
+
+			<h1>系统设置</h1>
+
+			<h2><strong>功能列表</strong></h2>
+
+			<ul>
+				<li><strong>同步日历</strong></li>
+				<li><strong>默认日历视图</strong></li>
+				<li><strong>一周开始</strong></li>
+				<li><strong>默认提醒时间</strong></li>
+				<li><strong>全天事件提醒</strong></li>
+				<li><strong>帐户设置</strong></li>
+				<li><strong>好友列表</strong></li>
+			</ul>
+
+			
+
+
+			<h2>交互视频及规则</h2>
+
+			<div>
+				<p class="small light">如果无法观看视频，请安装最新版的Safari<p>
+				<video src="" controls="controls"></video>
+			</div>
+
+			<h3><strong>动态效果:</strong></h3>
+			<ul>
+				<li>效果左滑：新页面从右方滑出替代原有页面《----</li>
+				<li>效果右滑：新页面从左方滑出替代原有页面 -----》</li>
+			</ul>
+
+
+			<h3><strong>总体规则</stong></h3>
+			<ul>
+				<li>从日历页进入设置页面为效果右滑</li>
+				<li>从任意上级页面进入次级页面都为效果左滑</li>
+				<li>从任意次级页面返回到上级页面都为效果右滑</li>
+			</ul>
+			
+			
+
+
+			<h2>各功能备注</h2>
+
+			<h3><strong>     同步日历</strong></h3>
+				<div class="img_bc">
+				<span><img src="./Img/EmailSync-None.png" class="ui_img"></span>
+				<span><img src="./Img/EmailSync-Google.png" class="ui_img"></span>
+				<span><img src="./Img/EmailSync-Exist.png" class="ui_img"></span>
+				</div>
+			
+			<ol>
+				<li>点击“google calendar”进入授权流程，授权成功后该邮箱地址出现在账户列表内</li>
+				<li>点击“关联”及“取消关联”切换账户关联状态</li>
+				<li>抓取同步邮箱相关信息</li>
+			</ol>
+
+			<h3><strong>     默认日历视图</strong></h3>
+				<div class="img_bc">
+				<span><img src="./Img/DefaultView.png" class="ui_img"></span>
+				</div>
+
+			<ol>
+				<li>     点击选项“日”“周”“月”“列表”视图即完成设置并右滑返回设置页面</li>
+				<li>     设置成功后，返回日历主页面即为设置视图</li>
+			</ol>
+
+			<h3><strong>一周开始</strong></h3>
+				<div class="img_bc">
+					<span><img src="./Img/DefaultWeekStart-Monday.png" class="ui_img"></span>
+				</div>
+
+			<ol>
+				<li>点击“周一”“周日”即完成设置并右滑返回设置页面</li>
+				<li>设置成功后，将仅影响”月视图“（周一至周日的排列顺序及月视图日期的整体”前移“或”后移“一天）</li>
+				<li>若日期”前移“”后移“导致该月显示日期不完整（31号已经为月视图最后一格，并且默认一周开始从”周一“变为”周日），将增加月视图行数</li>
+			</ol>
+
+			<h3><strong>默认提醒时间</strong></h3>
+				<div class="img_bc">
+					<span><img src="./Img/DefaultReminder.png" class="ui_img"></span>
+				</div>
+
+			<ol>
+				<li>默认提醒时间设置为单选设置（区别于完整添加）</li>
+				<li>点击选项“15分钟”“30分钟”及其他选项即完成设置并右滑返回设置页面</li>
+				<li>事件添加的提醒时间调整为设置的时间</li>
+			</ol>
+
+
+
+			<h3><strong>帐户设置</strong></h3>
+				<div class="img_bc">
+					<span><img src="./Img/PersonalSettings.png" class="ui_img"></span>
+					<span><img src="./Img/PersonalSettings-Keyboard.png" class="ui_img"></span>
+					<span><img src="./Img/PersonalSettings-Birthday.png" class="ui_img"></span>
+			</div>
+
+			<ol>
+				<li>账户设置使用与微信个人设置的布局方式</li>
+				<li>点击头像即弹出选择相片，更换头像</li>
+				<li>注册信息不可修改</li>
+      			<ul>
+      				<li>若以手机号注册，电话区域无法修改</li>
+    				<li>若以手机号注册，并且关联邮箱，邮箱处显示关联邮箱且不可修改</li>
+     				<li>若以邮箱注册，邮箱处显示关联邮箱地址，否则显示注册邮箱地址（可能一开始大多人的注册邮箱并不是常用邮箱，各种qq邮箱不雅观，此处可忽略）</li>
+     				<li>若手动输入邮箱地址，则询问是否要关联该邮箱</li>
+     			</ul>
+				<li> 点击生日向下展开系统日期设置控件</li>
+				<li>点击可手动输入区域，系统弹出的文字输入框若遮盖该输入区域，那么该区域将自动上移至输入框上方，以便显示输入内容</li>
+			</ol>
+	
+			<h3><strong>好友列表</strong></h3>
+     			<div class="img_bc">
+     				<span><img src="./Img/FriendList.png" class="ui_img"></span>
+					<span><img src="./Img/FriendList-Invited.png" class="ui_img"></span>
+					<span><img src="./Img/FriendInfo.png" class="ui_img"></span>
+					<span><img src="./Img/Friendinfo-UnfriendConfirm.png" class="ui_img"></span>
+				</div>
+
+				<h4>好友</h4>
+				<ol>
+					<li>可点击好友进入好友详情查看，好友详情内</li>
+       				<ul>
+       					<li>点击头像放大头像</li>
+       					<li>点击解除好友，确认后立刻右滑返回好友列表页面</li>
+       				</ul>
+  					<li>解除好友后好友从列表中删除</li>
+  				</ol>
+       
+
+			<h4>可邀请</h4>
+
+			<ol>
+				<li>点击邀请后通过短信的方式邀请通讯录，微信，邮箱等好友加入</li>
+				<li>被邀请的好友使用被邀请的联系方式加入后（电话，邮箱），自动添加对方为好友，且在双方消息内显示好友已接受</li>
+				<li>通过算法将不同的可邀请人进行优先级排序（如曾经通过邮箱或者微信参与过日程的用户）
+				<li>可邀请人无详情页面</li>
+				<li>点击“邀请”后，“邀请”显示为“已邀请”，__天后若被邀请人尚未加入，则“已邀请”变回“邀请”</li>
+
+		<p class="red">＊可邀请的人的头像为系统默认头像，过于单调，若没有头像，则与通讯录无差别。是否能够按照“微信”“邮箱”“通讯录”三种不同的头像为不同的可邀请对象设置默认头像。或其他有趣的方式。同时告知用户该用户的来源。</p>
+
+		</div>
+	</div>
+
+
+</body>
+</html>
