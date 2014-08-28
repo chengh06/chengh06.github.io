@@ -8,8 +8,8 @@
 <body>
 	<div class="container nav">
 		<a href="chengh06.github.io">主页面</a>
-		<span>需求文档</span>
-		<a href="chengh06.github.io">视觉设计</a>
+		<span>IOS开发需求文档</span>
+		<a href="chengh06.github.io">后台逻辑需求文档</a>
 	</div>
 
 	<div class="container">
@@ -76,6 +76,12 @@
 				<li>视图中横向和竖向线宽均为1px</li>
 				<li>图中距离的标注均不包含线宽，例如每天的宽度是88px，标注中为86px，因为线宽为1px</li>
 				<li>top menu中的图标上下居中</li>
+				<li><strong class="red">全天日程bar的长度为72px,距离左右侧竖线7px。位移最小单位1小时，长度3px</strong></li>
+				<ul>
+					<li><strong class="red">时长4个小时以内的日程bar长度为12px</strong></li>
+					<li><strong class="red">时长为x，且x大于4，则bar的长度y=(x-4)*3+12</strong></li>
+					<li><strong class="red">开始时间相差1小时，则移动3px</strong></li>
+				</ul>
 			</ol>
 
 			<div class="img_bc">
@@ -106,6 +112,7 @@
 					<li>区域的图层高度为0>1>2>3>4>5</li>
 					<li>区域4、5可以上线滑动</li>
 					<li>区域1、3、5可以左右滑动</li>
+					<li>默认时间为8:00-17:00</li>
 				</ul>
 			</ol>
 
@@ -120,6 +127,38 @@
 				<li>“今天”的背景和文字均采用<strong>蓝色</strong>，颜色值如上图所示.</li>
 			</ol>
 
+			<h2>4 日视图</h2>
+
+			<h3>4.1 交互</h3>
+			<p>日视图提供左右滑动和上下滑动两种交互，左右滑动切换日期，上线滑动切换时间，支持点击时间区域创建日程</p>
+
+			<div class="img_bc">
+				<span><img src="./img/day_view_mark_1.png" class="ui_img"></span>
+			</div>
+
+			<ol>
+				<li>日视图存在5个区域</li>
+				<ul>
+					<li>区域1显示一周的日期，支持左右滑动，切换周；同时，切换日期时，对应的日期也发生变化</li>
+					<li>区域2显示“全天”2个字</li>
+					<li>区域3显示全天的日程</li>
+					<li>区域4显示时间</li>
+					<li>区域5显示某天的日程</li>
+				</ul>
+				<li>各个区域的交互方式如下:</li>
+				<ul>
+					<li>区域的图层高度为1>2>3>4>5</li>
+					<li>3,5左右滑动，1上对应的日期发生变化</li>
+					<li>1可左右滑动，直接切换1周</li>
+					<li>4，5可上线滑动，切换时间</li>
+					<li>默认时间为8:00-17:00</li>
+				</ul>
+			</ol>
+
+			<h3>4.2 视觉及标注</h3>
+			<div class="img_bc">
+				<span><img src="./img/day_view_mark_2.png" class="chart_img"></span>
+			</div>			
 
 		</div>
 		
