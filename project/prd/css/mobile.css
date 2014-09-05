@@ -9,6 +9,10 @@ a {
 	text-decoration: none !important;
 }
 
+a:visited {
+	color: #FFFFFF;
+}
+
 .download-area {
 	/* Rectangle 4: */
 	background: #F0F0F0;
