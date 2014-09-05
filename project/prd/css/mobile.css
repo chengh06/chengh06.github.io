@@ -48,6 +48,7 @@ body {
 
 .st-title-text-ch {
 	font-size: 26px;
+	font-weight: bold;
 	color: #555555;
 	margin-top: 32px;
 	margin-bottom: 0px;
@@ -57,6 +58,19 @@ body {
 	font-size: 20px;
 	color: #555555;
 	margin-top: 10px;
+}
+
+.st-download {
+	position: absolute;
+	right: 30px;
+	top: 36px;
+}
+
+.st-download-button {
+	background-color: #23A2FF;
+	color: #FFFFFF;
+	text-shadow: none;
+	font-weight: normal;
 }
 
 .st-button {
@@ -69,17 +83,7 @@ body {
 	width: 580px;
 }
 
-.st-download-button {
-	border-radius: 5px;
-	/* Rectangle 69: */
-	background: #23A2FF;
-	font-family: STHeitiSC-Light;
-	font-size: 22px;
-	color: #FFFFFF;
-	line-height: 23px;
-	height: 58px;
-	width: 128px;
-}
+
 
 .st-event-baseInfo {
 	width: 100%;
