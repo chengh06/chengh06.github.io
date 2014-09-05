@@ -32,6 +32,8 @@ body {
 
 .st-logo {
 	position: absolute;
+	width: 96px;
+	height: 96px;
 	left: 30px;
 }
 
