@@ -1,0 +1,123 @@
+body {
+	font-family: STHeitiSC-Light;
+	color: #555555;
+	
+}
+
+.download-area {
+	/* Rectangle 4: */
+	background: #FAFAFA;
+	-moz-box-shadow:    0px 1px 0px 0px rgba(0,0,0,0.20);
+	box-shadow:         0px 1px 0px 0px rgba(0,0,0,0.20);
+	width: 100%;
+	height: 132px;
+}
+
+.main-area {
+	background: #FFFFFF;
+	width: 100%;
+}
+
+.confirm-area {
+	/* Background: */
+	background: #FFFFFF;
+	-moz-box-shadow:    0px -2px 6px 0px rgba(85,85,85,0.40), 0px -1px 0px 0px rgba(0,0,0,0.20), 0px 1px 0px 0px rgba(0,0,0,0.20);
+	box-shadow:         0px -2px 6px 0px rgba(85,85,85,0.40), 0px -1px 0px 0px rgba(0,0,0,0.20), 0px 1px 0px 0px rgba(0,0,0,0.20);
+	z-index: 100px;
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.st-button {
+	border-radius: 10px;
+	/* Rectangle 17: */
+	background: #23A2FF;
+	font-family: STHeitiSC-Light;
+	color: #FFFFFF;
+	height: 88px;
+	width: 580px;
+}
+
+.st-download-button {
+	border-radius: 5px;
+	/* Rectangle 69: */
+	background: #23A2FF;
+	font-family: STHeitiSC-Light;
+	font-size: 22px;
+	color: #FFFFFF;
+	line-height: 23px;
+	height: 58px;
+	width: 128px;
+}
+
+.st-event-baseInfo {
+	width: 100%;
+	height: 312px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.st-event-vipInfo {
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.st-confirm-switch {
+	margin: 5px auto;
+}
+
+.st-confirm-input-area {
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.st-confirm-input {
+	border-radius: 10px;
+	/* Rectangle 41: */
+	background: #FFFFFF;
+	border: 1px solid #979797;
+
+	font-family: STHeitiSC-Light;
+	font-size: 32px;
+	color: #AAAAAA;
+	line-height: 33px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
