@@ -38,6 +38,7 @@ a:visited {
 	height: 400px;
 	position: absolute;
 	bottom: 0px;
+	overflow: hidden;
 }
 
 .st-logo {
