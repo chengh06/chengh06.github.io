@@ -122,8 +122,26 @@ a:visited {
 	padding-bottom: 25px;
 }
 
+.st-confirm-switch-area {
+	height: 40px;
+	width: 100%;
+	margin: 0 auto;
+}
 .st-confirm-switch {
-	margin: 5px auto;
+	height: 20px;
+	width: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+.st-confirm-text {
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+.st-join-text {
+	font-size: 14px;
+	color: #23A2FF;
 }
 
 .st-confirm-input-area {
@@ -147,6 +165,9 @@ a:visited {
 	color: #AAAAAA;
 	line-height: 33px;
 }
+
+
+
 
 /** float */
 .pull-left {
