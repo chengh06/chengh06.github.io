@@ -10,15 +10,28 @@
 	<link rel="stylesheet" type="text/css" href="./css/mobile.css">
 
 	<script type="text/javascript">
+	$(function(){
+
+		var showFlag = 1;
+
 		$(document).bind("scrollstart",function(){
 			$(".confirm-area").animate({bottom: "-350px"}, 500);
+			showFlag = 0;
 		});
 
 		$(".st-confirm-switch-area").click(function(){
-			var pos = $(".confirm-area").attr("bottom");
-			alert("bottom is " + pos);
-		});
+			
+			if (showFlag == 0) {
+				$(".confirm-area").animate({bottom: "0px"}, 500);
+				showFlag = 1;
+			} else {
+				$(".confirm-area").animate({bottom: "-350px"}, 500);
+				showFlag = 0;
+			}
 
+			
+		});
+	});
 	</script>
 
 </head>
@@ -47,7 +60,7 @@
 	</div>
 	<div class="confirm-area">
 		<div class="st-confirm-switch-area">
-			<span class="st-confirm-text st-join-text pull-left">我也要参加</span>
+			<span class="st-confirm-text st-join-text pull-left">我要参加</span>
 			<span class="st-confirm-switch pull-right"><img src="./img/close_btn.png"></span>
 		</div>
 
