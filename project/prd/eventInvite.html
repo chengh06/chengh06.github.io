@@ -16,6 +16,7 @@
 
 		$(document).bind("scrollstart",function(){
 			$(".confirm-area").animate({bottom: "-350px"}, 500);
+			$("#switch-btn-img").attr('src','./img/open_btn.png');
 			showFlag = 0;
 		});
 
@@ -23,9 +24,11 @@
 			
 			if (showFlag == 0) {
 				$(".confirm-area").animate({bottom: "0px"}, 500);
+				$("#switch-btn-img").attr('src','./img/close_btn.png');
 				showFlag = 1;
 			} else {
 				$(".confirm-area").animate({bottom: "-350px"}, 500);
+				$("#switch-btn-img").attr('src','./img/open_btn.png');
 				showFlag = 0;
 			}
 
@@ -61,7 +64,9 @@
 	<div class="confirm-area">
 		<div class="st-confirm-switch-area">
 			<span class="st-confirm-text st-join-text pull-left">我要参加</span>
-			<span class="st-confirm-switch pull-right"><img src="./img/close_btn.png"></span>
+			<span class="st-confirm-switch pull-right">
+				<img id="switch-btn-img" src="./img/close_btn.png">
+			</span>
 		</div>
 
 	</div>
