@@ -40,7 +40,7 @@ body {
 .st-logo-icon {
 	width: 96px;
 	height: 96px;
-	background: url("./img/logo@2x.png") no-repeat;
+	background: url("../img/logo@2x.png") no-repeat;
 }
 
 .st-button {
