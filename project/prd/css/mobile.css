@@ -4,6 +4,11 @@ body {
 	
 }
 
+a {
+	color: #FFFFFF;
+	text-decoration: none !important;
+}
+
 .download-area {
 	/* Rectangle 4: */
 	background: #F0F0F0;
@@ -68,12 +73,12 @@ body {
 
 .st-download-button {
 	background-color: #23A2FF;
-	color: #FFFFFF;
 	text-shadow: none;
 	font-weight: normal;
 	border-radius: 5px;
 
 	font-size: 16px;
+	color: #FFFFFF;
 	margin: .5em 0;
 	padding: .9em 1.2em;
 	text-align: center;
