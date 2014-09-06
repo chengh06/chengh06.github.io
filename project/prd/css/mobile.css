@@ -49,14 +49,14 @@ a:visited {
 	top: 18px;
 }
 
-.st-title {
+.st-head {
 	position: absolute;
 	height: 96px;
 	text-align: left;
 	left: 140px;
 }
 
-.st-title-text-ch {
+.st-head-text-ch {
 	font-size: 26px;
 	font-weight: bold;
 	color: #555555;
@@ -64,7 +64,7 @@ a:visited {
 	margin-bottom: 0px;
 }
 
-.st-title-text-en {
+.st-head-text-en {
 	font-size: 20px;
 	color: #555555;
 	margin-top: 10px;
@@ -108,18 +108,40 @@ a:visited {
 .st-event-baseInfo {
 	width: 100%;
 	height: 312px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 25px;
-	padding-bottom: 25px;
 }
 
-.st-event-vipInfo {
+.st-event-invite {
 	width: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 25px;
-	padding-bottom: 25px;
+}
+
+.st-event-baseInfo-avatar {
+	margin-left: 30px;
+	margin-top: 18px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	width: 80px;
+	height: 80px;
+}
+
+.st-event-baseInfo-inviter {
+	margin-left: 30px;
+	margin-top: 40px;
+	font-size: 30px;
+	color: #555555;
+	vertical-align: middle;
+
+}
+
+.st-event-baseInfo-minor-text {
+	margin-left: 30px;
+	margin-top: 40px;
+	font-size: 30px;
+	color: #AAAAAA;
+	vertical-align: middle;
+}
+
+.st-event-attendeeInfo {
+	width: 100%;
 }
 
 .st-confirm-switch-area {
