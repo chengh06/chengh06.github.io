@@ -185,11 +185,10 @@ a:visited {
 
 .st-event-description-text {
 	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 18px;
 	font-size: 22px;
 	color: #555555;
-	line-height: 23px;
+	line-height: 23px;   
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */ 
 }
 
 
