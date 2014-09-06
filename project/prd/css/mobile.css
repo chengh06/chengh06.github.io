@@ -149,7 +149,7 @@ a:visited {
 }
 
 .st-confirm-switch-area {
-	height: 40px;
+	height: 70px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -157,7 +157,7 @@ a:visited {
 	height: 20px;
 	width: 30px;
 	margin-right: 30px;
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 .st-confirm-text {
@@ -166,7 +166,7 @@ a:visited {
 }
 
 .st-join-text {
-	font-size: 18px;
+	font-size: 24px;
 	color: #23A2FF;
 }
 

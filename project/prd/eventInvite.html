@@ -15,7 +15,7 @@
 		var showFlag = 1;
 
 		$(document).bind("scrollstart",function(){
-			$(".confirm-area").animate({bottom: "-350px"}, 500);
+			$(".confirm-area").animate({bottom: "-330px"}, 500);
 			$("#switch-btn-img").attr('src','./img/open_btn.png');
 			showFlag = 0;
 		});
@@ -27,7 +27,7 @@
 				$("#switch-btn-img").attr('src','./img/close_btn.png');
 				showFlag = 1;
 			} else {
-				$(".confirm-area").animate({bottom: "-350px"}, 500);
+				$(".confirm-area").animate({bottom: "-330px"}, 500);
 				$("#switch-btn-img").attr('src','./img/open_btn.png');
 				showFlag = 0;
 			}			
