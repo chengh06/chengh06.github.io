@@ -112,14 +112,11 @@ a:visited {
 
 .st-event-invite {
 	width: 100%;
-	height: 120px;
-
-	display: inline;
 }
 
 .st-event-baseInfo-avatar {
 	margin-left: 30px;
-	vertical-align: middle;
+	margin-top: 18px;
 	width: 80px;
 	height: 80px;
 }
@@ -128,15 +125,14 @@ a:visited {
 	margin-left: 30px;
 	font-size: 30px;
 	color: #555555;
-	vertical-align: middle;
+	margin-top: 40px;
 }
 
 .st-event-baseInfo-minor-text {
 	margin-left: 30px;
-	margin-top: 40px;
 	font-size: 30px;
 	color: #AAAAAA;
-	vertical-align: middle;
+	margin-top: 40px;
 }
 
 .st-event-attendeeInfo {
