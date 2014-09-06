@@ -17,16 +17,16 @@ a:visited {
 .download-area {
 	/* Rectangle 4: */
 	background: #F0F0F0;
-	-moz-box-shadow:    0px 1px 0px 0px rgba(0,0,0,0.20);
-	box-shadow:         0px 1px 0px 0px rgba(0,0,0,0.20);
+	-moz-box-shadow:    0px 1px 0px 0px #d7d7f7;
+	box-shadow:         0px 1px 0px 0px #d7d7d7;
 	width: 100%;
 	height: 132px;
-	vertical-align: middle;
 }
 
 .main-area {
 	background: #FFFFFF;
 	width: 100%;
+	margin-bottom: 70px;
 }
 
 .confirm-area {
@@ -109,6 +109,7 @@ a:visited {
 .st-event-baseInfo {
 	width: 100%;
 	height: 312px;
+	box-shadow: 0px 1px 0 0 #d7d7d7;
 }
 
 .st-event-invite {
@@ -147,7 +148,36 @@ a:visited {
 
 .st-event-attendeeInfo {
 	width: 100%;
+	min-height: 150px;
 }
+
+.st-event-attendeeText {
+	margin-left: 30px;
+	font-size: 30px;
+	color: #555555;
+	line-height: 80px;
+}
+
+.st-event-attendeeAvatar-area {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: -10px;
+}
+
+.st-attendee-avatar {
+	width: 60px;
+	height: 60px;
+	margin-right: 8px;
+}
+
+.st-event-description {
+	width: 100%;
+	min-height: 400px;
+}
+
+
+
+
 
 .st-confirm-switch-area {
 	height: 70px;
