@@ -112,24 +112,23 @@ a:visited {
 
 .st-event-invite {
 	width: 100%;
+	height: 120px;
+
+	display: inline;
 }
 
 .st-event-baseInfo-avatar {
 	margin-left: 30px;
-	margin-top: 18px;
-	margin-right: 0px;
-	margin-bottom: 0px;
+	vertical-align: middle;
 	width: 80px;
 	height: 80px;
 }
 
 .st-event-baseInfo-inviter {
 	margin-left: 30px;
-	margin-top: 40px;
 	font-size: 30px;
 	color: #555555;
 	vertical-align: middle;
-
 }
 
 .st-event-baseInfo-minor-text {
