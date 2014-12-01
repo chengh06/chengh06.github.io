@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日程管家</title>
+<link rel="stylesheet" type="text/css" href="./css/prd_blog.css">
+</head>
+<body>
+	<div class="container nav">
+		<a href="chengh06.github.io">主页面</a>
+		<span>IOS开发需求文档</span>
+		<a href="./account.html">后台逻辑需求文档</a>
+	</div>
+
+	<div class="container">
+		<div class="right menu">
+			<ul class="none">
+				<li><a href="./structure.html">整体布局prd</a></li>
+				<li><a href="./calendar.html">日历视图prd</a></li>
+				<li><a href="./add_event.html">添加日程prd</a></li>
+				<li><a href="./event_news.html">消息视图prd</a></li>
+				<li><a href="./event_detail.html">日程详情与讨论prd</a></li>
+				<li><a href="./settings.html">设置页面prd</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="light small meta">
+				<p>版本：1.2</p>
+				<p>更新：2014-12-1</p>
+			</div>
+
+			<h1>添加日程需求文档</h1>
+
+			<h2>1 概述</h2>
+			<p>1.2版添加日程的原则是：简单</p>
+			<p>删除了原来的完整添加，将管理员的日程详情页面和完整添加整合</p>
+			<p>添加页面（页面名称是智能添加）只提供主题和时间</p>
+
+			<h2>2 智能添加</h2>
+			<p>点击添加页面，进入“智能添加页面”，如下图所示</p>
+			<div class="img_bc">
+				<span><img src="./img1.2/smart add 1.png" class="ui_img"></span>
+			</div>
+
+			<h3>2.1 语音添加</h3>
+			<p>按住语音按钮，即可语音添加日程</p>
+			<p>语音输入时，按钮为水波纹效果。待输入完成，则显示“正在识别”</p>
+			<p>识别成功后，直接显示“智能添加页面”</p>
+			<div class="img_bc">
+				<span><img src="./img1.2/voice add 1.png" class="ui_img"></span>
+				<span><img src="./img1.2/voice add 2.png" class="ui_img"></span>
+			</div>
+
+			<h3>2.2 文字添加</h3>
+			<p>点击输入框，则采用文字添加</p>
+			<p>在用户输入文字的过程中，自动识别时间，在确定输入内容已经不是时间的时候，将代表时间的文字添加背景</p>
+			<div class="img_bc">
+				<span><img src="./img1.2/smart add 2.png" class="ui_img"></span>
+				<span><img src="./img1.2/smart add 3.png" class="ui_img"></span>
+			</div>
+
+			<h3>2.3 编辑时间</h3>
+			<p>不论是语音添加还是文字添加，都会出现时间识别错误的情况</p>
+			<p class="red"><strong>点击时间区域，即可修改时间</strong></p>
+			<p class="red"><strong>点击时间区域，屏幕内出现蒙版。时间选择框从上向下出现。之后再向右滑出；与此同时日期选择框从左向右滑出</strong></p>
+			<div class="img_bc">
+				<span><img src="./img1.2/event detail 6.png" class="ui_img"></span>
+				<span><img src="./img1.2/event detail 7.png" class="ui_img"></span>
+			</div>
+
+			<h3>2.4 编辑类别</h3>
+			<h4>2.4.1 自动编辑类别</h4>
+			<p>识别关键词，自动编辑类别</p>
+			<ol>
+				<li>工作：开会、讨论、会议</li>
+				<li>娱乐：聚餐、聚会、看电影、生日</li>
+				<li>学习：看书，上课，复习，自习，作业，交流</li>
+			</ol>
+
+			<p>没有关键词，则根据用户输入的时间，自动编辑类别：</p>
+			<ol>
+				<li>工作:默认</li>
+				<li>娱乐:周末的事件</li>
+			</ol>
+
+			<h4>2.4.2 手动编辑类别</h4>
+			<p>点击主题旁边的分类标志，选择分类</p>
+			<p>确定分类，输入框颜色变化</p>
+			<p><strong>手动选择分类之后，不再自动识别分类</strong></p>
+			<div class="img_bc">
+				<span><img src="./img1.2/smart add 1.1.png" class="ui_img"></span>
+				<span><img src="./img1.2/smart add 1.1.2.png" class="ui_img"></span>
+				<span><img src="./img1.2/smart add 1.1.3.png" class="ui_img"></span>
+			</div>
+
+			<h2>3 日程详情（可编辑）</h2>
+			<p>点击智能添加页面的“保存”，进入创建者的日程详情页面（也可以理解为完整添加页面，但是此页面提供转发到微信功能）。</p>
+			<p>默认提醒时间为提前1小时，并可以在设置中修改</p>
+			<div class="img_bc">
+				<span><img src="./img1.2/event detail 1.png" class="ui_img"></span>
+			</div>
+
+			<h3>3.1 编辑时间</h3>
+			<p>编辑时间分为编辑日期和编辑小时</p>
+			<p class="red"><strong>点击日期，弹出日期编辑弹框，在日期弹框中选择是否为全天日程；一旦选择全天日程，则不再能够左滑进入编辑时间页面</strong></p>
+			<p>点击时间，进入编辑起始时间空间。长按日程部分可以拖动整体时间区域；单击圆圈则可修改时间。日程颜色框内实时显示起始时间和时长</p>
+			<div class="img_bc">
+				<span><img src="./img1.2/event detail 6.png" class="ui_img"></span>
+				<span><img src="./img1.2/event detail 7.png" class="ui_img"></span>
+				<span><img src="./img1.2/event detail 9.png" class="ui_img"></span>
+			</div>
+
+			<h3>3.2 编辑地点</h3>
+			<p>点击地点按钮，地点输入框滑动到屏幕上方。输入地点时识别地点并推荐</p>
+			<p>用户点击推荐地点之后，推荐栏消失，出现地图</p>
+			<p>点击保存，回到日程详情页面</p>
+			<div class="img_bc">
+				<span><img src="./img1.2/event edit 1.png" class="ui_img"></span>
+				<span><img src="./img1.2/event edit 2.png" class="ui_img"></span>
+				<span><img src="./img1.2/event edit 3.png" class="ui_img"></span>
+			</div>
+
+			<h3>3.3 编辑关联人</h3>
+			
+			<h3>3.4 分享到微信</h3>
+			<p>可编辑的日程详情页面，右上角为分享按钮，点击分享，弹出“微信”和“朋友圈”的选择框</p>
+			<div class="img_bc">
+				<span><img src="./img1.2/event detail 3.png" class="ui_img"></span>
+			</div>
+
+			<h3>3.5 删除</h3>
+
+			
+
+		</div>
+		
+	</div>
+
+</body>
+</html>
