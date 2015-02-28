@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日程管家</title>
+<link rel="stylesheet" type="text/css" href="./css/prd_blog.css">
+</head>
+<body>
+	<div class="container nav">
+		<a href="http://chengh06.github.io">主页面</a>
+		<span><a href="./ui_explore.html">视觉探索</a></span>
+		<span>2.0版视觉设计</span>
+	</div>
+
+	<div class="container">
+		<div class="right menu">
+			<ul class="none">
+				<li>2.0版概述</li>
+				<li><a href="./calendar_view.html">2.0版日历视图</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="light small meta">
+				<p>版本：1.0</p>
+				<p>更新：2015-2-27</p>
+			</div>
+
+			<h1>朝夕日历2.0版设计概述</h1>
+
+			<h2>1 页面</h2>
+			<p>页面主要包括以下几类</p>
+			<ul>
+				<li>日历视图</li>
+				<li>添加日程</li>
+				<li>消息视图</li>
+				<li>日程详情</li>
+				<li>日程讨论</li>
+				<li>设置页面</li>
+				<li>登陆注册</li>
+				<li>加载和简介</li>
+			</ul>
+
+			<h3>1.1 日历视图</h3>
+			<p>2.0版提供5个日历视图，分别是：日程视图，列表视图，月视图，周视图和日视图</p>
+			
+			<h4>1.1.1 日程视图</h4>
+			<p>日程视图是开机后的默认视图，日程视图主要展示当天的日程、待办、天气等信息</p>
+			<p>下图为1.2版的日程视图：</p>
+			<div class="img_bc">
+				<span><img src="./img/1-1.png" class="ui_img"></span>
+				<span><img src="./img/1-2.png" class="ui_img"></span>
+			</div>
+			<p><strong style="color:red">注意：日程视图存在以下情况，在设计时需要考虑</strong></p>
+			<ol>
+				<strong>
+				<li>日程区域上下拉动的效果</li>
+				<li>待办日程集合收起和展开的效果</li>
+				<li>切换视图的效果</li>
+				</strong>
+			</ol>
+
+			<h4>1.1.2 列表视图</h4>
+			<p>列表视图是在2.0版本中新加的视图，在列表视图中主要展示当前周/月的日期和对应的日程</p>
+			<p>下图为列表视图的效果图</p>
+			<div class="img_bc">
+				<span><img src="./img/1-9.PNG" class="ui_img"></span>
+				<span><img src="./img/1-10.PNG" class="ui_img"></span>
+			</div>
+			<p><strong style="color:red">注意：列表视图存在以下特殊情况需要考虑</strong></p>
+			<ol>
+				<strong>
+				<li>日期区域下拉显示月，上拉显示周</li>
+				<li>日程上下滑动时的效果</li>
+				<li>待办日程显示的效果</li>
+				<li>天气信息显示的效果</li>
+				</strong>
+			</ol>
+
+			<h4>1.1.3 月视图</h4>
+			<p>月视图是日历中的常见视图，可以让用户宏观的了解当月的日程安排</p>
+			<p>下图为月视图的效果图</p>
+			<div class="img_bc">
+				<span><img src="./img/1-3.png" class="ui_img"></span>
+			</div>
+			<p><strong style="color:red">注意：月视图存在以下特殊情况需要考虑</strong></p>
+			<ol>
+				<strong>
+				<li>某一天展开的情况</li>
+				<li>莫一天展开没有日程的情况</li>
+				<li>班休</li>
+				<li>全天日程和待办的显示方式</li>
+				</strong>
+			</ol>
+
+			<h4>1.1.4 周视图</h4>
+			<p>下图为周视图的效果图</p>
+			<div class="img_bc">
+				<span><img src="./img/1-4.png" class="ui_img"></span>
+			</div>
+			<p><strong style="color:red">注意：周视图存在以下特殊情况需要考虑</strong></p>
+			<ol>
+				<strong>
+				<li>有全天日程的情况</li>
+				<li>默认显示时间段应该覆盖主要时间；非主要时间能否弱化</li>
+				<li>过去的时间是否弱化</li>
+				<li>突出当前时间和当前日期</li>
+				</strong>
+			</ol>
+
+			<h4>1.1.5 日视图</h4>
+			<p>下图为日视图的效果图</p>
+			<div class="img_bc">
+				<span><img src="./img/1-5.png" class="ui_img"></span>
+			</div>
+
+			<p><strong style="color:red">注意：日视图存在以下特殊情况需要考虑</strong></p>
+			<ol>
+				<strong>
+				<li>有全天日程的情况</li>
+				<li>默认显示时间段应该覆盖主要时间；非主要时间能否弱化</li>
+				<li>突出当前时间和当前日期</li>
+				</strong>
+			</ol>
+
+			<h3>1.2 添加日程</h3>
+			<p>添加日程主要分两部分：智能添加和完整添加</p>
+
+			<h4>1.2.1 智能添加</h4>
+			<p>单击添加按钮，进入智能添加页面</p>
+			<p>智能添加页面首先需要引导用户语音添加</p>
+			<p>如果用户选择文字添加，则展开键盘</p>
+			<p>在智能添加页面可以进行如下操作：</p>
+			<ol>
+				<li>语音添加日程</li>
+				<li>文字添加日程</li>
+				<li>修改日程类别</li>
+				<li>编辑日程主题</li>
+				<li>修改日程时间</li>
+			</ol>
+
+			<p><strong style="color:red">语音和文字添加的效果图如下所示：</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/2-1.png" class="ui_img"></span>
+				<span><img src="./img/2-2.png" class="ui_img"></span>
+				<span><img src="./img/2-3.png" class="ui_img"></span>
+			</div>
+
+			<p><strong style="color:red">修改日程类别效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/2-4.png" class="ui_img"></span>
+				<span><img src="./img/2-5.png" class="ui_img"></span>
+			</div>
+
+			<p><strong style="color:red">修改日程时间效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/2-7.png" class="ui_img"></span>
+				<span><img src="./img/2-8.png" class="ui_img"></span>
+				<span><img src="./img/2-9.png" class="ui_img"></span>
+				<span><img src="./img/2-10.png" class="ui_img"></span>
+				<span><img src="./img/2-11.png" class="ui_img"></span>
+			</div>	
+
+			<h4>1.2.2 完整添加</h4>
+			<p>在智能添加页面点击保存，进入完整添加页面</p>
+			<p>在完整添加页面可以进行如下操作</p>
+			<ol>
+				<li>文字添加日程</li>
+				<li>修改日程类别</li>
+				<li>编辑日程主题</li>
+				<li>修改日程时间</li>
+				<li>修改提醒时间</li>
+				<li>编辑地点</li>
+				<li>添加关联人</li>
+				<li>添加重复</li>
+				<li>添加描述</li>
+				<li>分享到微信</li>
+				<li>删除日程</li>
+			</ol>
+
+			<p><strong style="color:red">修改地点效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/2-13.png" class="ui_img"></span>
+				<span><img src="./img/2-14.png" class="ui_img"></span>
+				<span><img src="./img/2-15.png" class="ui_img"></span>
+				<span><img src="./img/2-16.png" class="ui_img"></span>
+			</div>
+
+			<p><strong style="color:red">添加好友效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/2-22.png" class="ui_img"></span>
+				<span><img src="./img/2-23.png" class="ui_img"></span>
+				<span><img src="./img/2-24.png" class="ui_img"></span>
+			</div>
+
+			<p><strong style="color:red">编辑重复效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/2-18.png" class="ui_img"></span>
+				<span><img src="./img/2-19.png" class="ui_img"></span>
+				<span><img src="./img/2-20.png" class="ui_img"></span>
+				<span><img src="./img/2-21.png" class="ui_img"></span>
+			</div>
+
+			<h3>1.3 消息页面</h3>
+			<p>消息页面包含三部分：日程消息、好友消息和添加好友</p>
+
+			<h4>1.3.1 日程消息</h4>
+			<p>日程消息包括日程邀请和日程讨论</p>
+			<p><strong style="color:red">日程消息效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/3-5.PNG" class="ui_img"></span>
+			</div>
+
+			<h4>1.3.2 好友消息</h4>
+			<p>好友消息有以下三种情况：</p>
+			<ol>
+				<li>好友邀请</li>
+				<li>好友推荐</li>
+				<li>添加记录</li>
+			</ol>
+			<p><strong style="color:red">好友消息效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/3-4.PNG" class="ui_img"></span>
+			</div>
+
+			<h4>1.3.3 添加好友</h4>
+			<p>支持以下方式添加好友</p>
+			<ol>
+				<li>通过手机号查找并添加</li>
+				<li>通过邮箱查找并添加</li>
+				<li>通过扫面二维码添加</li>
+			</ol>
+			<p>添加好友页面显示用户自己的二维码</p>
+
+
+			<h3>1.4 日程详情</h3>
+
+			<p>日程详情页面显示日程的所有信息，详情页面包含以下几个状态：</p>
+			<ol>
+				<li>还未接受邀请的状态</li>
+				<li>已经接受邀请的状态</li>
+				<li>日程组织者的状态</li>
+			</ol>
+			<p>日程详情页面可以执行以下操作：</p>
+			<ol>
+				<li>参与日程后可查看参与者</li>
+				<li>日程创建者可以管理全部参与者（显示未接受的和待定的）</li>
+				<li>语音日程可以听声音</li>
+				<li>有地点的直接导航</li>
+				<li>多人日程可以直接进入日程讨论页面</li>
+				<li>日程创建者有权修改日程</li>
+				<li>日程参与者可以修改提醒时间</li>
+			</ol>
+			<p><strong style="color:red">日程详情效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/4-1.png" class="ui_img"></span>
+				<span><img src="./img/4-2.png" class="ui_img"></span>
+				<span><img src="./img/4-3.png" class="ui_img"></span>
+				<span><img src="./img/4-4.png" class="ui_img"></span>
+			</div>
+
+
+			<h3>1.5 日程讨论</h3>
+			<p>日程讨论页面，作用是让日程参与者可以方便的分享本程相关的图片，文件，或者针对此日程的内容进行讨论</p>
+			<p>日程讨论页面可以进行如下操作：</p>
+			<ol>
+				<li>发图片和文件（文件可以存到dropbox/evernote）</li>
+				<li>发文字和语音</li>
+				<li>查看本讨论相关的日程</li>
+				<li>查看本讨论的参与者</li>
+				<li>识别讨论内容并快速创建新内容</li>
+				<li>返回到上一页面（详情页或者消息页面）</li>
+			</ol>
+			<p><strong style="color:red">日程讨论效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/5-1.png" class="ui_img"></span>
+				<span><img src="./img/5-2.png" class="ui_img"></span>
+			</div>
+			<p><strong style="color:red">注意：日程讨论页面的布局还未最终敲定</strong></p>
+
+			<h3>1.6 设置页面</h3>
+			<p>设置页面主要包含以下几大部分：</p>
+			<ol>
+				<li>个人账号页面</li>
+				<ul>
+					<li>头像</li>
+					<li>基本信息</li>
+					<li>公司信息</li>
+					<li>账号设置（修改密码等）</li>
+				</ul>
+				<li>账号关联（微信/谷歌/evernote/dropbox/dribbble等）</li>
+				<li>默认设置</li>
+				<li>好友列表</li>
+				<li>关于和反馈</li>
+				<li>退出账号</li>
+			</ol>
+			<p><strong style="color:red">设置页面效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/6-1.png" class="ui_img"></span>
+				<span><img src="./img/6-2.png" class="ui_img"></span>
+			</div>
+
+			<p><strong style="color:red">注意！！！！好友列表点击进去可以查看好友的个人信息，可以管理好友</strong></p>
+
+			<h3>1.7 注册登录</h3>
+			<p>现在提供微信注册和手机号码注册两种方式</p>
+			<p><strong style="color:red">登陆注册效果图如下</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/7-1.png" class="ui_img"></span>
+				<span><img src="./img/7-2.png" class="ui_img"></span>
+			</div>
+			<p><strong style="color:red">注意！还有登陆、注册和忘记密码的页面</strong></p>
+
+			<h3>1.8 加载和简介</h3>
+			<p>打开应用时会有2-3s的加载时间，需要在加载页提供我们的logo，如果能够传递其他信息则更有</p>
+			<p>简洁页面用户app store介绍和第一次打开应用时的介绍；需要说清楚产品的亮点</p>
+
+
+			<h2>2 图标</h2>
+			<p>现有图片主要包括以下几类</p>
+			<ol>
+				<li>logo</li>
+				<li>功能图标</li>
+				<li>日程分类图标和日程详情图标</li>
+				<li>设置页面图标</li>
+			</ol>
+			<h3>2.1 logo</h3>
+			<p>根据VI色，“朝夕”，智能社交日历来设计logo</p>
+
+			<h3>2.2 功能图标</h3>
+			<p>功能图标包括以下图标：</p>
+			<ol>
+				<li>添加</li>
+				<li>语音添加</li>
+				<li>日程</li>
+				<li>消息</li>
+				<li>设置</li>
+				<li>切换视图</li>
+				<li>回到今天</li>
+				<li>添加好友</li>
+				<li>返回</li>
+				<li>分享</li>
+				<li>保存</li>
+				<li>关闭</li>
+			</ol>
+
+			<h3>2.3 分类图标和日程详情图标</h3>
+			<p>主要包含以下图标</p>
+			<p><strong>日程分类:</strong></p>
+			<ol>
+				<li>工作</li>
+				<li>娱乐</li>
+				<li>学习</li>
+				<li>待办</li>
+				<li>节日</li>
+				<li>生日</li>
+			</ol>
+
+			<p><strong>日程详情图标:</strong></p>
+			<p>如下图所示：</p>
+			<div class="img_bc">
+				<span><img src="./img/2-1.png" class="ui_img"></span>
+				<span><img src="./img/2-7.png" class="ui_img"></span>
+				<span><img src="./img/2-19.png" class="ui_img"></span>
+				<span><img src="./img/2-24.png" class="ui_img"></span>
+			</div>
+
+			<h3>2.4 设置页面图标</h3>
+			<p>设置页面如表如下所示：</p>
+			<div class="img_bc">
+				<span><img src="./img/6-1.png" class="ui_img"></span>
+				<span><img src="./img/6-2.png" class="ui_img"></span>
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>
