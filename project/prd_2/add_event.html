@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日程管家</title>
+<link rel="stylesheet" type="text/css" href="./css/prd_blog.css">
+</head>
+<body>
+	<div class="container nav">
+		<a href="http://chengh06.github.io">主页面</a>
+		<span>IOS开发需求文档</span>
+	</div>
+
+	<div class="container">
+		<div class="right menu">
+			<ul class="none">
+				<li>添加日程</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="light small meta">
+				<p>版本：1.0</p>
+				<p>更新：2015-3-19</p>
+				<p style="color:red">请在mac电脑屏上查看</p>
+			</div>
+
+			<h1>添加日程-开发需求文档</h1>
+			<h2>1 概述</h2>
+			<p>添加日程主要分为3部分：智能语音添加，智能文字添加和完整添加</p>
+			<p><strong style="color:red">添加日程页面没有status bar</strong></p>
+
+			<h2>2 智能语音添加</h2>
+			<p>智能语音添加有两个入口：视图页面长按添加按钮进入语音添加，点击添加按钮进入语音添加</p>
+			<h3>2.1 点击添加按钮</h3>
+			<p>点击添加按钮，进入智能语音添加页面</p>
+			<p>注：在设置页面，可以设计默认进入的是智能语音添加还是智能文字添加</p>
+			<p>在智能语音添加页面需要引导用户使用语音添加，<strong>输入框背景虽然为蓝色，但是其中<span style="color:red">不要有光标</span></strong> </p>
+			<p>语音识别之后，输入框内显示识别出的结果，结尾<strong style="color:red">显示光标</strong>，下方出现键盘和切换到语音的按钮。一旦开始键盘输入，切换到语音的按钮消失</p>
+			<p>用户在使用语音添加之后，如果识别不准确，用户可以再次语音添加。添加的内容不叠加而是覆盖。</p>
+			<p>具体效果如下图所示：</p>
+			<div class="img_bc">
+				<span><img src="./img/1_smart_add/1.png" class="ui_img"></span>
+				<span><img src="./img/1_smart_add/8.png" class="ui_img"></span>
+			</div>
+	
+
+			<p>点击确定之后，进入完整添加页面</p>
+			<p><strong style="color:red">如果识别出参与者，那么参与者在完整添加页面展开！！</strong></p>
+			<p>管理员可以删除错误的参与者（重名时，把对应的都找出来）</p>
+			<div class="img_bc">
+				<span><img src="./img/1_smart_add/7.png" class="ui_img"></span>
+			</div>
+
+			<h3>2.2 长按添加按钮</h3>
+
+			<h2>3 智能文字添加</h2>
+
+			<h2>4 完整添加</h2>
+
+			
+
+		</div>
+		
+	</div>
+
+</body>
+</html>

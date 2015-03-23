@@ -1,0 +1,303 @@
+body {
+	font-family:sans-serif;
+	color: #555555;
+	background-color: #FFFFFF;
+	
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none !important;
+}
+
+a:visited {
+	color: #FFFFFF;
+}
+
+.download-area {
+	/* Rectangle 4: */
+	background: #F0F0F0;
+	-moz-box-shadow:    0px 1px 0px 0px #d7d7f7;
+	box-shadow:         0px 1px 0px 0px #d7d7d7;
+	width: 100%;
+	height: 132px;
+}
+
+.main-area {
+	background: #FFFFFF;
+	width: 100%;
+	margin-bottom: 70px;
+}
+
+.confirm-area {
+	/* Background: */
+	background: #FFFFFF;
+	-moz-box-shadow:    0px -2px 6px 0px rgba(85,85,85,0.40), 0px -1px 0px 0px rgba(0,0,0,0.20), 0px 1px 0px 0px rgba(0,0,0,0.20);
+	box-shadow:         0px -2px 6px 0px rgba(85,85,85,0.40), 0px -1px 0px 0px rgba(0,0,0,0.20), 0px 1px 0px 0px rgba(0,0,0,0.20);
+	z-index: 100px;
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+.st-logo {
+	position: absolute;	
+	width: 97px;
+	height: 97px;
+	left: 30px;
+	top: 18px;
+}
+
+.st-head {
+	position: absolute;
+	height: 96px;
+	text-align: left;
+	left: 140px;
+}
+
+.st-head-text-ch {
+	font-size: 26px;
+	font-weight: bold;
+	color: #555555;
+	margin-top: 32px;
+	margin-bottom: 0px;
+}
+
+.st-head-text-en {
+	font-size: 20px;
+	color: #555555;
+	margin-top: 10px;
+}
+
+.st-download {
+	position: absolute;
+	right: 30px;
+	top: 35px;
+}
+
+.st-download-button {
+	background-color: #23A2FF;
+	text-shadow: none;
+	font-weight: normal;
+	border-radius: 5px;
+
+	font-size: 16px;
+	color: #FFFFFF;
+	margin: .5em 0;
+	padding: .9em 1.2em;
+	text-align: center;
+	white-space: nowrap;
+	text-decoration: none !important;
+	display: block;
+	vertical-align: middle;
+}
+
+.st-button {
+	border-radius: 10px;
+	/* Rectangle 17: */
+	background: #23A2FF;
+	font-family: STHeitiSC-Light;
+	color: #FFFFFF;
+	height: 88px;
+	width: 580px;
+}
+
+
+
+.st-event-baseInfo {
+	width: 100%;
+	height: 312px;
+	box-shadow: 0px 1px 0 0 #d7d7d7;
+}
+
+.st-event-invite {
+	width: 100%;
+	height: 120px;
+}
+
+.st-event-baseInfo-avatar {
+	margin-left: 30px;
+	margin-top: 18px;
+	width: 80px;
+	height: 80px;
+}
+
+.st-event-baseInfo-avatar-area {
+	position: absolute;
+}
+
+.st-event-baseInfo-inviter-area {
+	margin-left: 110px;
+}
+
+.st-event-baseInfo-inviter {
+	margin-left: 30px;
+	font-size: 30px;
+	color: #555555;
+	line-height: 120px;
+}
+
+.st-event-baseInfo-minor-text {
+	margin-left: 20px;
+	font-size: 30px;
+	color: #AAAAAA;
+	line-height: 80px;
+}
+
+.st-event-attendeeInfo {
+	width: 100%;
+	min-height: 150px;
+}
+
+.st-event-attendeeText {
+	margin-left: 30px;
+	font-size: 30px;
+	color: #555555;
+	line-height: 80px;
+}
+
+.st-event-attendeeAvatar-area {
+	position: absolute;
+	margin-left: 30px;
+	margin-top: -10px;
+}
+
+.st-attendee-avatar {
+	width: 60px;
+	height: 60px;
+	margin-right: 8px;
+}
+
+.st-event-description {
+	width: 100%;
+	min-height: 400px;
+}
+
+.st-event-description-title {
+	margin-left: 30px;
+	font-size: 30px;
+	color: #555555;
+	box-shadow: 0px -1px 0 0 #d7d7d7;
+	line-height: 80px;
+}
+
+.st-event-description-text {
+	margin-left: 30px;
+	margin-right: 30px;
+	font-size: 22px;
+	color: #555555;
+	line-height: 23px;   
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */ 
+}
+
+
+.st-confirm-switch-area {
+	height: 70px;
+	width: 100%;
+	margin: 0 auto;
+}
+.st-confirm-switch {
+	height: 20px;
+	width: 30px;
+	margin-right: 30px;
+	margin-top: 25px;
+}
+
+.st-confirm-text {
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+.st-join-text {
+	font-size: 24px;
+	color: #23A2FF;
+}
+
+.st-confirm-input-area {
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.st-confirm-input {
+	border-radius: 10px;
+	/* Rectangle 41: */
+	background: #FFFFFF;
+	border: 1px solid #979797;
+	height: 58px;
+	width: 128px;
+
+	font-family: STHeitiSC-Light;
+	font-size: 32px;
+	color: #AAAAAA;
+	line-height: 33px;
+}
+
+.st-event-detail {
+	width: 100%;
+	height: 200px;
+}
+
+.st-event-title {
+	margin-left: 30px;
+	font-size: 32px;
+	color: #555555;
+	line-height: 60px;
+}
+
+.st-event-time {
+	margin-left: 30px;
+	font-size: 28px;
+	color: #555555;
+	line-height: 60px;
+}
+
+.st-event-location {
+	margin-left: 30px;
+	font-size: 28px;
+	color: #555555;
+	line-height: 60px;
+}
+
+.st-avatar {
+
+}
+
+
+
+/** float */
+.pull-left {
+	float:left;
+	display:inline;
+}
+
+.pull-right {
+	float:right;
+	display:inline;
+}
+
+.clear{clear:both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
