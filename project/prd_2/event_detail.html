@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日程管家</title>
+<link rel="stylesheet" type="text/css" href="./css/prd_blog.css">
+</head>
+<body>
+	<div class="container nav">
+		<a href="http://chengh06.github.io">主页面</a>
+		<span>IOS开发需求文档</span>
+	</div>
+
+	<div class="container">
+		<div class="right menu">
+			<ul class="none">
+				<li><a href="./add_event.html">添加日程</a></li>
+				<li>日程详情和讨论</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="light small meta">
+				<p>版本：1.0</p>
+				<p>更新：2015-4-8</p>
+				<p style="color:red">请在mac电脑屏上查看</p>
+			</div>
+
+			<h1>日程详情和讨论-开发需求文档</h1>
+			<h2>1 概述</h2>
+			<p>日程详情页的入口是日程视图和消息列表</p>
+			<p>日程详情页面存在三种状态：未参与状态；管理员状态和非管理员已经参与状态</p>
+			<ul>
+				<li>未参与状态</li>
+				<li>创建者状态</li>
+				<li>非创建者已参与状态</li>
+			</ul>
+			<p>日程详情页面内容和完整添加页面基本一致，包含以下部分</p>
+			<ul>
+				<li>创建者</li>
+				<li>参与者</li>
+				<li>主题</li>
+				<li>时间</li>
+				<li>地点</li>
+				<li>提醒</li>
+				<li>重复</li>
+				<li>日程讨论</li>
+				<li>描述</li>
+				<li>选择tab</li>
+			</ul>
+			<p>完整的日程添加页面如下图所示：</p>
+			<div class="img_bc">
+				<span><img src="./img/6_event_detail/Details_attend_long.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details_done_long.png" class="ui_img"></span>
+			</div>
+
+			<strong style="color:red">
+			<p>注意</p>
+			<ul>
+				<li>语音日程需要提供听语音的按钮</li>
+				<li>地点能够识别出的情况下，提供导航按钮</li>
+			</ul>
+			</strong>
+
+
+			<h2>2 不同状态的介绍</h2>
+			<h3>2.1 未参与状态</h3>
+			<p>未参与状态下，有以下几点需要注意：</p>
+			<ul>
+				<li>看不到其他参与者信息</li>
+				<li>看不到讨论信息</li>
+				<li>看以看到创建者</li>
+				<li>可以看到一共几条评论</li>
+				<li>提供：待定，接受和拒绝按钮</li>
+				<ol>
+					<li>点击待定相当于返回</li>
+					<li>点击接受：出现loading，然后弹框提示参加成功，tab变成已加入的样式</li>
+					<li>点击拒绝：出现弹框询问是否确定拒绝，点击确定后提示拒绝成功，然后返回到上一页（返回之后可以建一个消失的动画）</li>
+				</ol>
+			</ul>
+
+			<h3>2.2 创建者状态和参与者状态</h3>
+			<p>创建者和参与者进入详情页面之后显示内容一样</p>
+			<p><strong style="color:red">创始人点击编辑进入完整添加页面，参与者点击编辑只能修改提醒时间</strong></p>
+			<p>详情页面效果如下图所示</p>
+			<div class="img_bc">
+				<span><img src="./img/6_event_detail/Details1.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details2.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details3.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details4.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details5.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details6.png" class="ui_img"></span>
+			</div>
+
+			<h2>3 不同功能区域的详细介绍</h2>
+			<h3>3.1 参与者区域</h3>
+			<p>参与者区域最多显示6个头像，包括创建者</p>
+			<p>当向上滑动时，发生以下动画</p>
+			<ul>
+				<li>创建者头像逐渐变小并上移</li>
+				<li>参与者头像逐渐消失</li>
+				<li>显示人数的白色框逐渐消失</li>
+			</ul>
+			<p>滑动后结果如下图所示：</p>
+			<div class="img_bc">
+				<span><img src="./img/6_event_detail/Details_done.png" class="ui_img"></span>
+			</div>
+
+			<h3>3.2 主题区域</h3>
+			<p>主题区域的显示方式和试图部分基本一致，背景颜色和日程分类相关</p>
+			<p>当日程包含语音时，主题后方有语音按钮</p>
+			<p>主题最长为48个中文字（每2个英文字母大小和1个中文字）</p>
+			<div class="img_bc">
+				<span><img src="./img/6_event_detail/Details_48max.png" class="ui_img"></span>
+			</div>
+
+			<h3>3.3 时间、地点、提醒和重复</h3>
+			<p>有则显示，没有则不显示~</p>
+			<p>如果地点可以被识别，则提供导航按钮</p>
+
+			<p>3.4 讨论</p>
+			<p>讨论部分有以下几种状态：</p>
+			<ul>
+				<li>单人日程无评论：不显示讨论</li>
+				<li>单人日程有评论：显示3条（或小于3条）讨论内容，提供进入讨论页面入口</li>
+				<li>多人日程未参与：有讨论时显示讨论数，没有讨论时显示“暂无讨论”</li>
+				<li>多人日程已参与：有讨论是显示最近的3条讨论并给出讨论入口；没有讨论时显示“分享内容给其他参与者”</li>
+			</ul>
+
+			<p>如果用户在讨论中发的是图片、文件等，则显示“分享了一张图片/文件”</p>
+			<div class="img_bc">
+				<span><img src="./img/6_event_detail/Details_attend.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details1.png" class="ui_img"></span>
+			</div>
+
+
+			<p>3.5 描述</p>
+			<p>无描述的情况下，不显示描述；有描述时显示完整的描述</p>
+
+			<p>3.6 选择tab</p>
+			<p>日程详情的选择tab分为三种情况：</p>
+			<ul>
+				<li>未加入</li>
+				<li>已加入未完成</li>
+				<li>已加入已完成</li>
+			</ul>
+			<p>效果如下图所示：</p>
+			<div class="img_bc">
+				<span><img src="./img/6_event_detail/Details_attend.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details1.png" class="ui_img"></span>
+				<span><img src="./img/6_event_detail/Details_done.png" class="ui_img"></span>
+			</div>
+
+
+
+
+
+
+
+
+			
+
+		</div>
+		
+	</div>
+
+</body>
+</html>
