@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日程管家</title>
+<link rel="stylesheet" type="text/css" href="./css/prd_blog.css">
+</head>
+<body>
+	<div class="container nav">
+		<a href="http://chengh06.github.io">主页面</a>
+		<span>IOS开发需求文档</span>
+	</div>
+
+	<div class="container">
+		<div class="right menu">
+			<ul class="none">
+				<li><a href="./add_event.html">添加日程</a></li>
+				<li><a href="./event_detail.html">日程详情</a></li>
+				<li>登陆注册</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="light small meta">
+				<p>版本：1.0</p>
+				<p>更新：2015-4-25</p>
+				<p style="color:red">请在mac电脑屏上查看</p>
+			</div>
+
+			<h1>登陆注册-开发需求文档</h1>
+			<h2>1 概述</h2>
+			<p>第一次打开应用，先进入引导页再进入登陆注册页</p>
+			<p>之后在未登录状态下，进入登陆注册页面</p>
+
+			<h2>2 注册</h2>
+			<p>注册的第一个页面，只需要输入手机号。并且提供微信登陆的入口。键盘自动打开</p>
+			<p><strong style="color:red">需要检测本地是否安装微信，如果没有安装则不显示微信登陆按钮</strong></p>
+			<p>当用户输入完手机号，并且检测正确后，微信登陆消失，显示下一步按钮</p>
+			<p>点击下一步时，后台给用户发送验证码短信</p>
+			<div class="img_bc">
+				<span><img src="./img/7_login/注册1.png" class="ui_img"></span>
+				<span><img src="./img/7_login/注册2.png" class="ui_img"></span>
+			</div>
+
+			<p>用户点击下一步之后，进入填写注册信息页面</p>
+			<p>进入动画为：tab和白色背景下拉，注册页其他信息淡入</p>
+			<p>进入填写信息页面，验证码开始倒计时，倒计时未结束时手机号输入框为不可点击状态</p>
+			<p>信息未输入完，“注册”按钮不可点击，信息输入完成后登陆按钮进入可点击状态</p>
+			<p><strong style="color:red">密码限制为“6-20”。再输入框提示“密码（最小6位）”</strong></p>
+			<div class="img_bc">
+				<span><img src="./img/7_login/注册3.png" class="ui_img"></span>
+				<span><img src="./img/7_login/注册4.png" class="ui_img"></span>
+			</div>
+
+			<h2>3 登陆</h2>
+			<p>选择登陆tab，键盘消失，输入框淡入</p>
+			<p>开始输入密码后，当密码符合要求时候，“忘记密码”按钮改为登陆按钮</p>
+			<p>如果登陆失败，则提示登陆失败，情况密码输入框之后再次显示“忘记密码”按钮</p>
+			<div class="img_bc">
+				<span><img src="./img/7_login/登录1.png" class="ui_img"></span>
+				<span><img src="./img/7_login/登录2.png" class="ui_img"></span>
+				<span><img src="./img/7_login/登录3.png" class="ui_img"></span>
+			</div>
+
+			<h2>4 忘记密码</h2>
+			<p>点击忘记密码后，不需要跳转页面，登陆的输入框消失</p>
+			<p>背景、logo和输入部分整体上移，忘记密码输入框淡入</p>
+			<p>输入的密码符合要求后，出现登陆按钮</p>
+			<div class="img_bc">
+				<span><img src="./img/7_login/登录4 忘记密码.png" class="ui_img"></span>
+				<span><img src="./img/7_login/登录5 忘记密码2.png" class="ui_img"></span>
+				
+			</div>
+
+
+			
+
+		</div>
+		
+	</div>
+
+</body>
+</html>
